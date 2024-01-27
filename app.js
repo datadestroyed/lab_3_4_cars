@@ -40,7 +40,7 @@ app.use(function (err, req, res, next) {
 });
 
 mongoose
-    .connect(process.env.DB)
+    .connect("mongodb+srv://phamthienscam:123@lab34cars.ubi1d0q.mongodb.net/?retryWrites=true&w=majority")
     .then((success) => console.log("Connected to mongodb server!"))
     .catch((err) => console.log("Error, Couldn't connect to mongodb server!!!\n> Stack: " + err));
 
